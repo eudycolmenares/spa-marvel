@@ -1,0 +1,19 @@
+.container-header {
+  align-items     : center;
+  background-color: var(--color-dark);
+  display         : flex;
+  flex-direction  : row;
+  height          : 100%;
+  padding-left    : var(--margin-side);
+  padding-right   : var(--margin-side);
+
+  img {
+    height: 80%;
+  }
+
+  input {
+    height: 80%;
+    margin: 0 0 0 10%;
+    width : 50%;
+  }
+}

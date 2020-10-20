@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  align-items   : center;
+  display       : flex;
+  flex-direction: column;
+  margin        : 0px;
+}
+
+/* VARIABLES */
+:root {
+  --color-dark : #2d2727;
+  --margin-side: 1rem;
+}
