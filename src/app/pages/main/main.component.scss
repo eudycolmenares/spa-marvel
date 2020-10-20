@@ -1,0 +1,36 @@
+.container-main {
+  padding: var(--margin-side);
+}
+
+.container-title {
+  align-items    : center;
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-between;
+
+  .title {
+    align-items: center;
+    display    : flex;
+
+    img {
+      height: 2.4rem;
+      margin: 0 .6rem 0 0;
+    }
+
+    span {
+      color         : black;
+      font-size     : 1.7rem;
+      font-weight   : bold;
+      letter-spacing: 1px;
+    }
+  }
+
+  select {
+    height: 2.5rem;
+    width : 14rem;
+  }
+}
+
+.container-characters {
+  width: 100%;
+}
