@@ -1,0 +1,28 @@
+.container-aside {
+  padding: var(--margin-side);
+}
+
+.container-title {
+  align-items    : center;
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-between;
+
+  .title {
+    align-items: center;
+    display    : flex;
+
+    img {
+      height: 2.4rem;
+      margin: 0 .6rem 0 0;
+    }
+
+    span {
+      color      : black;
+      font-size  : 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  .container-comics {}
+}

@@ -1,17 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  align-items   : center;
-  display       : flex;
-  flex-direction: column;
-  margin        : 0px;
-  font-family   : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  align-items     : center;
+  background-color: indianred;
+  display         : flex;
+  flex-direction  : column;
+  margin          : 0px;
+  font-family     : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* VARIABLES */
 :root {
-  --color-dark : #2d2727;
-  --color-red  : #ec1e23;
-  --margin-side: 1rem;
-  --text-grey  : #796f6e;
-  --transform-px: 10px;
+  --color-dark     : #2d2727;
+  --color-red      : #ec1e23;
+  --margin-side    : 1rem;
+  --text-grey      : #796f6e;
+  --text-grey-light: #ebebeb;
+  --transform-px   : 10px;
 }
