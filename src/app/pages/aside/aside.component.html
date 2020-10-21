@@ -1,13 +1,14 @@
-<div class="container-aside">
-  <div class="container-title">
+<div class="container-aside" #aside>
+  <div class="container-title" #title>
     <div class="title">
       <img src="assets/images/favourites.png">
       <span>My favourites</span>
     </div>
   </div>
 
-  <div class="container-comics">
-    <ng-container *ngFor="let i of [1,2,3,4,5]">
+  <div class="container-comics" #comics>
+    <ng-container *ngFor="let i of arrayComics">
+      <app-comic></app-comic>
     </ng-container>
   </div>
 </div>

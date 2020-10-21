@@ -1,5 +1,7 @@
 .container-aside {
-  padding: var(--margin-side);
+  box-sizing: border-box;
+  padding   : var(--margin-side);
+  height    : 100%;
 }
 
 .container-title {
@@ -23,6 +25,10 @@
       font-weight: bold;
     }
   }
+}
 
-  .container-comics {}
+.container-comics {
+  margin  : 1rem 0 0 0;
+  padding : 1rem 0 0 0;
+  overflow: auto;
 }

@@ -1,0 +1,26 @@
+.container-comic {
+  align-items   : center;
+  display       : flex;
+  flex-direction: column;
+  position      : relative;
+  text-align    : center;
+
+  .button-remove {
+    cursor  : pointer;
+    position: absolute;
+    height  : auto;
+    right   : 0px;
+    top     : -1rem;
+  }
+
+  .cover-page {
+    height: 18rem;
+    width : auto;
+  }
+
+  p {
+    font-weight: bold;
+    font-size  : 0.98rem;
+    margin     : .8rem 0 1.8rem 0;
+  }
+}
