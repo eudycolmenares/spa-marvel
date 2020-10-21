@@ -4,9 +4,10 @@
   grid-template-areas: "header header header header"
     "main main main aside"
     "footer footer footer footer";
-  grid-template-rows: 40px auto 40px;
-  min-height        : 100vh;
-  width             : 900px;
+  grid-template-columns   : repeat(4, 250px);
+  grid-template-rows      : 40px auto 40px;
+  min-height              : 100vh;
+  // width                : 900px;
 
 
   header {
@@ -15,7 +16,7 @@
   }
 
   main {
-    background: blueviolet;
+    background: #f4f4f4;
     grid-area : main;
   }
 
