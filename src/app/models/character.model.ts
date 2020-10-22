@@ -1,7 +1,7 @@
 export interface CharacterModel {
   name: string;
   description?: string;
-  image: ImageModel[];
+  image: string;
   comics: ComicsModel[];
 }
 

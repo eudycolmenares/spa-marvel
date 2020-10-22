@@ -41,7 +41,7 @@
       font-size         : .8rem;
       letter-spacing    : .5px;
       line-height       : 1.1rem;
-      -webkit-line-clamp: 5;
+      -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
       overflow          : hidden;
       text-overflow     : ellipsis;
@@ -49,12 +49,13 @@
 
     button {
       background-color: var(--color-red);
-      border          : 0px;
       color           : white;
-      height          : 2rem;
+      font-size       : .85rem;
       font-weight     : bold;
+      line-height     : 1.9rem;
       text-transform  : uppercase;
-      width           : 6rem;
+      padding         : 0 .7rem;
+
     }
   }
 }
@@ -90,4 +91,89 @@
       margin            : 0px;
     }
   }
+}
+
+//
+
+.uk-modal-body {
+  padding: 30px 0 0 0;
+
+  .uk-close {
+    color           : white;
+    background-color: black;
+    border-radius   : 50%;
+  }
+}
+
+.container-modal {
+  display              : grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows   : 20rem;
+  margin               : 0 30px 30px;
+
+  .cover-page {
+    height: 20rem;
+
+    img {
+      height: inherit;
+    }
+  }
+
+  .information {
+    overflow-y: auto;
+
+    .uk-modal-title {
+      font-size     : 1.2rem;
+      font-weight   : bold;
+      text-transform: uppercase;
+      margin        : 0;
+    }
+
+    p {
+      font-size   : .85rem;
+      margin      : .5rem 0;
+      word-spacing: 2px;
+    }
+  }
+}
+
+.container-buttons {
+  display              : grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows   : 4rem;
+
+  .btn-modal {
+    cursor         : pointer;
+    width          : 100%;
+    height         : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+  }
+
+  img {
+    height: 35px;
+    margin: 0 .5rem 0 0;
+  }
+
+  span {
+    font-size  : .95rem;
+    font-weight: bold;
+  }
+
+  .favourite {
+    background-color: #f0f0f0;
+  }
+
+  .buy {
+    background-color: #dcdcdc;
+  }
+}
+
+.text-red {
+  color: var(--color-red);
+}
+
+.text-dark {
+  color: var(--color-red);
 }

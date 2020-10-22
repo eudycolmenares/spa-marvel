@@ -1,6 +1,6 @@
 <div class="container-character">
   <div class="header-character">
-    <img [src]="data.image.path +'.'+ data.image.extension">
+    <img [src]="data.image">
     <div class="information">
       <div>
         <p class="name">{{ data.name }}</p>
@@ -8,7 +8,11 @@
           {{ (data.description.trim()) ? data.description : noDrescription }}
         </p>
       </div>
-      <button>View More</button>
+      <!-- <button>View More</button> -->
+      <button class="uk-button uk-button-default uk-margin-small-right" type="button"
+        uk-toggle="target: #modal-close-default">
+        View More
+      </button>
     </div>
   </div>
   <div class="container-comics">
@@ -20,6 +24,36 @@
       <ng-container *ngIf="dataComics.length === 0">
         <p>No related comics</p>
       </ng-container>
+    </div>
+  </div>
+</div>
+<!--  -->
+<div id="modal-close-default" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="container-modal">
+      <div class="cover-page">
+        <img src="https://comics.panini.es/repository/Spain/Comics/News/News-Images/Spot_On/2019/05/SAMIS001_0.jpg">
+      </div>
+      <div class="information">
+        <h4 class="uk-modal-title">All-new, all-different avengers (2015) #1.1</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <div class="container-buttons">
+      <div class="btn-modal favourite">
+        <img src="assets/images/btn-favourites-default.png">
+        <span>ADD TO FAVOURITES</span>
+      </div>
+      <div class="btn-modal buy">
+        <img src="assets/images/shopping-cart-primary.png">
+        <span>BUY FOR $3.99</span>
+      </div>
     </div>
   </div>
 </div>

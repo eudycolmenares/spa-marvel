@@ -26,7 +26,7 @@ export class MainComponent implements OnInit {
           {
             name: item.name,
             description: item.description,
-            image: item.thumbnail,
+            image: `${item.thumbnail.path}.${item.thumbnail.extension}`,
             comics: item.comics['items'],
           }
         ));
