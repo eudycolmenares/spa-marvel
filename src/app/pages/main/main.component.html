@@ -14,8 +14,8 @@
   </div>
 
   <div class="container-characters">
-    <ng-container *ngFor="let i of [1,2,3,4,5]">
-      <app-character></app-character>
+    <ng-container *ngFor="let item of dataCharacters">
+      <app-character [data]='item'></app-character>
     </ng-container>
   </div>
 </div>

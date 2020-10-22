@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { takeUntil } from 'rxjs/operators';
+import { Subject } from 'rxjs';
+
+import { CharactersService } from '../../services/characters.service'
+import { CharacterModel } from '../../models/character.model';
 
 @Component({
   selector: 'app-main',
@@ -7,10 +12,36 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class MainComponent implements OnInit {
+  destroy$: Subject<boolean> = new Subject();
+  dataCharacters: CharacterModel[] = [];
 
-  constructor() { }
+  constructor(
+    private characterSvc: CharactersService,
+  ) {
+    this.characterSvc.myCharacters$
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(res => {
+        console.log('Desde main', res);
+        this.dataCharacters = res['data']['results'].map((item) => (
+          {
+            name: item.name,
+            description: item.description,
+            image: item.thumbnail,
+            comics: item.comics['items'],
+          }
+        ));
 
-  ngOnInit(): void {
+        console.log('this.dataCharacters', this.dataCharacters);
+
+      })
   }
 
+  ngOnInit(): void {
+    this.characterSvc.getCharacters();
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next(true);
+    this.destroy$.complete();
+  }
 }

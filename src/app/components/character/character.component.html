@@ -1,12 +1,11 @@
 <div class="container-character">
   <div class="header-character">
-    <img src="https://www.writeups.org/wp-content/uploads/Spider-Man-Marvel-Comics-Peter-Parker-Profile.jpg">
+    <img [src]="data.image.path +'.'+ data.image.extension">
     <div class="information">
       <div>
-        <p class="name">Spider-Man</p>
+        <p class="name">{{ data.name }}</p>
         <p class="description">
-          Spider-Man es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko. Apareció por
-          primera vez en el cómic de antología Amazing Fantasy # 15, en la Edad de Plata de los cómics.
+          {{ (data.description.trim()) ? data.description : noDrescription }}
         </p>
       </div>
       <button>View More</button>
@@ -15,10 +14,12 @@
   <div class="container-comics">
     <p class="subtitle">Related comics</p>
     <div class="comics">
-      <p>Spiderman/Deadpool #11</p>
-      <p>The Clone Conspiraxy #2</p>
-      <p>Spiderman/Deadpool #11</p>
-      <p>The Clone Conspiraxy #2</p>
+      <ng-container *ngIf="dataComics.length > 0">
+        <p *ngFor="let item of dataComics">{{ item.name }}</p>
+      </ng-container>
+      <ng-container *ngIf="dataComics.length === 0">
+        <p>No related comics</p>
+      </ng-container>
     </div>
   </div>
 </div>

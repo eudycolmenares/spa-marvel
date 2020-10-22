@@ -1,5 +1,4 @@
 <div class="container-header">
   <img src="assets/images/marvel.png">
-  <input type="search" placeholder="Search character...">
+  <input type="search" placeholder="Search character..." (keyup.enter)="search($event.target.value)">
 </div>
-<!-- <span>header works!</span> -->
