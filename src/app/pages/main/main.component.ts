@@ -24,6 +24,7 @@ export class MainComponent implements OnInit {
         console.log('Desde main', res);
         this.dataCharacters = res['data']['results'].map((item) => (
           {
+            id: item.id,
             name: item.name,
             description: item.description,
             image: `${item.thumbnail.path}.${item.thumbnail.extension}`,

@@ -29,7 +29,6 @@ export class CharacterComponent implements OnInit {
         comicsNew.push(this.data.comics[(i-1)]);
       }
       this.dataComics = comicsNew;
-
     }
   }
 }

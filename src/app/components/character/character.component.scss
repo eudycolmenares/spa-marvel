@@ -47,7 +47,7 @@
       text-overflow     : ellipsis;
     }
 
-    button {
+    button, a {
       background-color: var(--color-red);
       color           : white;
       font-size       : .85rem;
@@ -95,85 +95,85 @@
 
 //
 
-.uk-modal-body {
-  padding: 30px 0 0 0;
+// .uk-modal-body {
+//   padding: 30px 0 0 0;
 
-  .uk-close {
-    color           : white;
-    background-color: black;
-    border-radius   : 50%;
-  }
-}
+//   .uk-close {
+//     color           : white;
+//     background-color: black;
+//     border-radius   : 50%;
+//   }
+// }
 
-.container-modal {
-  display              : grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows   : 20rem;
-  margin               : 0 30px 30px;
+// .container-modal {
+//   display              : grid;
+//   grid-template-columns: 40% 60%;
+//   grid-template-rows   : 20rem;
+//   margin               : 0 30px 30px;
 
-  .cover-page {
-    height: 20rem;
+//   .cover-page {
+//     height: 20rem;
 
-    img {
-      height: inherit;
-    }
-  }
+//     img {
+//       height: inherit;
+//     }
+//   }
 
-  .information {
-    overflow-y: auto;
+//   .information {
+//     overflow-y: auto;
 
-    .uk-modal-title {
-      font-size     : 1.2rem;
-      font-weight   : bold;
-      text-transform: uppercase;
-      margin        : 0;
-    }
+//     .uk-modal-title {
+//       font-size     : 1.2rem;
+//       font-weight   : bold;
+//       text-transform: uppercase;
+//       margin        : 0;
+//     }
 
-    p {
-      font-size   : .85rem;
-      margin      : .5rem 0;
-      word-spacing: 2px;
-    }
-  }
-}
+//     p {
+//       font-size   : .85rem;
+//       margin      : .5rem 0;
+//       word-spacing: 2px;
+//     }
+//   }
+// }
 
-.container-buttons {
-  display              : grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows   : 4rem;
+// .container-buttons {
+//   display              : grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-template-rows   : 4rem;
 
-  .btn-modal {
-    cursor         : pointer;
-    width          : 100%;
-    height         : 100%;
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-  }
+//   .btn-modal {
+//     cursor         : pointer;
+//     width          : 100%;
+//     height         : 100%;
+//     display        : flex;
+//     align-items    : center;
+//     justify-content: center;
+//   }
 
-  img {
-    height: 35px;
-    margin: 0 .5rem 0 0;
-  }
+//   img {
+//     height: 35px;
+//     margin: 0 .5rem 0 0;
+//   }
 
-  span {
-    font-size  : .95rem;
-    font-weight: bold;
-  }
+//   span {
+//     font-size  : .95rem;
+//     font-weight: bold;
+//   }
 
-  .favourite {
-    background-color: #f0f0f0;
-  }
+//   .favourite {
+//     background-color: #f0f0f0;
+//   }
 
-  .buy {
-    background-color: #dcdcdc;
-  }
-}
+//   .buy {
+//     background-color: #dcdcdc;
+//   }
+// }
 
-.text-red {
-  color: var(--color-red);
-}
+// .text-red {
+//   color: var(--color-red);
+// }
 
-.text-dark {
-  color: var(--color-red);
-}
+// .text-dark {
+//   color: var(--color-red);
+// }

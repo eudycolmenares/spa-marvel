@@ -1,0 +1,28 @@
+.uk-close {
+  background   : white;
+  border-radius: 50%;
+  color        : var(--color-dark);
+}
+
+.uk-modal-header {
+  background-color: var(--color-dark);
+  color           : white;
+
+  h2 {
+    color         : white;
+    font-size     : 1.2rem;
+    font-weight   : bold;
+    text-transform: uppercase;
+  }
+
+  span {
+    font-weight   : normal;
+    text-transform: none;
+  }
+}
+
+.uk-modal-body {
+  li {
+    cursor: pointer;
+  }
+}

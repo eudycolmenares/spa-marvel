@@ -8,6 +8,7 @@ import { MainComponent } from './pages/main/main.component';
 import { CharacterComponent } from './components/character/character.component';
 import { AsideComponent } from './pages/aside/aside.component';
 import { ComicComponent } from './components/comic/comic.component';
+import { ComicListComponent } from './components/comic-list/comic-list.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ComicComponent } from './components/comic/comic.component';
     CharacterComponent,
     AsideComponent,
     ComicComponent,
+    ComicListComponent,
   ],
   imports: [
     BrowserModule,
